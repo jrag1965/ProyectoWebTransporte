@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: skyblue;
     color: black;
     max-width: 800px;
@@ -8,42 +8,54 @@ body {
 }
 h1 {
     text-align: center;
+    background-color: navy; 
+    color: white;
+    padding: 15px; /* Espaciado interno */
+    text-align: center;
+    border-radius: 5px; 
 }
 .fotoHeader{
     width: 30%;
 }
-header{
+header {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 nav {
     border-top: solid black 1px;
     border-bottom: solid black 1px;
     width: 100%;
     margin-bottom: 25px;
     padding: 8px;
+    background-color: white;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
     padding: 5px;
-
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color:black;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
 }
 
-nav ul li a:hover{
-    color: blue;
-}sss
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
 form {
     background-color: white;
     padding: 20px;
@@ -74,5 +86,5 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #218838;
+    background-color: skyblue;
 }
