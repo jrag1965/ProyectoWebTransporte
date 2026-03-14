@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: skyblue;
+    background-color: lightgreen;
     color: black;
     max-width: 800px;
     margin: 0 auto;
@@ -8,19 +8,20 @@ body {
 }
 h1 {
     text-align: center;
-    background-color: navy; 
+    background-color: green; 
     color: white;
     padding: 15px; /* Espaciado interno */
     text-align: center;
     border-radius: 5px; 
 }
 .fotoHeader{
-    width: 35%;
+    width: 60%;
 }
 header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: -20px;
 }
 
 nav {
@@ -78,7 +79,7 @@ input, textarea, select {
     border: 1px solid #ccc;
 }
 button {
-    background-color: darkblue;
+    background-color: green;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -86,5 +87,5 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: skyblue;
+    background-color: greenyellow;
 }

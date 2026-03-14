@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: skyblue;
+    background-color: lightgreen;
     color: black;
     margin: 0;
     padding: 0;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .serviciosSection h2 {
     font-family: 'Arial Black', Arial, sans-serif;
-    background-color: navy;
+    background-color: green;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -126,5 +126,5 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: skyblue;
+    color: lightgreen;
 }

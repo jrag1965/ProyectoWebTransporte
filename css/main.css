@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: palegreen;
+    background-color: lightgreen;
 }
 
 /* HEADER */
@@ -116,32 +116,199 @@ nav ul li a:hover {
 }
 
 .apuntame:hover {
-    background-color: darkblue;
+    background-color: palegreen;
+}
+/* ================= FOOTER GENERAL ================= */
+
+footer{
+
+background:linear-gradient(135deg,#0a0a0a,#1e1e1e);
+color:white;
+padding:40px 20px;
+margin-top:60px;
+position:relative;
+
 }
 
-/* FOOTER */
-footer {
-    background-color: black;
-    padding: 20px;
+
+/* LINEA VERDE LUMINOSA SUPERIOR */
+
+footer::before{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#00ff88,#00cc66,#00ff88);
+box-shadow:0 0 10px #00ff88;
+
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+
+/* CONTENEDOR PRINCIPAL */
+
+.footerContainer{
+
+display:flex;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
+gap:40px;
+flex-wrap:wrap;
+
 }
 
-footer ul li {
-    padding: 10px;
+
+/* COLUMNAS */
+
+.footerCol{
+
+flex:1;
+min-width:220px;
+text-align:left;
+
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: white;
+
+/* TITULOS */
+
+.footerCol h3{
+
+margin-bottom:15px;
+color:lightgreen;
+font-family:'Arial Black';
+
 }
 
-footer ul li a:hover {
-    color: lightblue;
+
+/* TEXTO */
+
+.footerCol p{
+
+line-height:1.6;
+font-size:14px;
+
+}
+
+
+/* LINKS */
+
+.footerCol a{
+
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:8px;
+transition:0.3s;
+
+}
+
+.footerCol a:hover{
+
+color:lightgreen;
+transform:translateX(5px);
+
+}
+
+
+/* ================= CAJA CONTACTO ================= */
+
+.contactoBox{
+
+background:#e8ffe8;
+padding:20px;
+border-radius:8px;
+color:black;
+border-left:4px solid green;
+}
+
+
+/* TITULO CONTACTO */
+
+.contactoBox h3{
+
+background:green;
+color:white;
+width:100%;
+padding:20px 0;
+border-radius:6px;
+margin-bottom:15px;
+font-family:'Arial Black';
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+
+/* TEXTO CONTACTO MAS GRANDE */
+
+.contactoBox p{
+
+font-size:16px;
+margin:6px 0;
+font-weight:500;
+
+}
+
+
+/* ================= REDES SOCIALES ================= */
+
+.redes{
+
+margin-top:30px;
+text-align:center;
+
+}
+
+.redes a{
+
+font-size:22px;
+color:white;
+margin:0 12px;
+transition:0.3s;
+
+}
+
+.redes a:hover{
+
+color:lightgreen;
+transform:scale(1.2);
+
+}
+
+
+/* ================= COPYRIGHT ================= */
+
+.copyright{
+
+margin-top:20px;
+text-align:center;
+font-size:14px;
+opacity:0.8;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+.footerContainer{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.footerCol{
+
+text-align:center;
+
+}
+
 }
 
 .acercaSection {
