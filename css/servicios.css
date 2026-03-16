@@ -1,130 +1,333 @@
-/* Estilos generales */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: lightgreen;
-    color: black;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+body{
+background:lightgreen;
+color:#222;
+text-align:center;
 }
 
-.fotoHeader {
-    width: 20%;
+
+/* HEADER */
+
+header{
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-nav {
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
-    width: 100%;
-    margin-bottom: 25px;
-    padding: 8px;
-    background-color: white;
+.fotoHeader{
+width:300px;
+margin-bottom: -20px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+
+/* NAV */
+
+nav{
+border-top:1px solid black;
+border-bottom:1px solid black;
+width:100%;
+margin:20px 0;
+padding:15px;
+background:white;
 }
 
-nav ul li {
-    padding: 5px;
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
+nav ul li a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+padding:10px 15px;
+border-radius:5px;
+transition:0.3s;
 }
 
-nav ul li a:hover {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+nav ul li a:hover{
+background:black;
+color:white;
 }
 
-/* Estilos para la sección de Servicios */
-.serviciosSection {
-    text-align: center;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+/* SECCION SERVICIOS */
+
+.serviciosSection{
+max-width:1100px;
+margin:40px auto;
+padding:30px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.serviciosSection h2 {
-    font-family: 'Arial Black', Arial, sans-serif;
-    background-color: green;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 30px;
+.serviciosSection h2{
+
+background:green;
+color:white;
+padding:15px;
+border-radius:6px;
+margin-bottom:15px;
+font-family:'Arial Black';
+
 }
 
-/* Estilo para el contenedor de los servicios */
-.serviciosContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+.subtitulo{
+
+font-size:18px;
+margin-bottom:40px;
+color:#333;
+
 }
 
-/* Estilo para cada subsección de servicio */
-.servicio {
-    width: 30%;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+/* CONTENEDOR SERVICIOS */
+
+.serviciosContainer{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+
 }
 
-.servicio img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
+
+/* TARJETAS SERVICIOS */
+
+.servicio{
+
+width:280px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+
 }
 
-.servicio p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: black;
+.servicio:hover{
+
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
 }
 
-/* Estilos del footer */
-footer {
-    background-color: black;
-    padding: 10px 0;
+.servicio img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:6px;
+margin-bottom:15px;
+
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+.servicio h3{
+
+margin-bottom:10px;
+font-size:20px;
+
 }
 
-footer ul li {
-    padding: 20px;
+.servicio p{
+
+font-size:15px;
+line-height:1.5;
+
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: white;
+
+/* FOOTER */
+
+footer{
+
+background:linear-gradient(135deg,#0a0a0a,#1e1e1e);
+color:white;
+padding:40px 20px;
+margin-top:60px;
+position:relative;
+
 }
 
-footer ul li a:hover {
-    color: lightgreen;
+
+/* LINEA SUPERIOR */
+
+footer::before{
+
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#00ff88,#00cc66,#00ff88);
+box-shadow:0 0 10px #00ff88;
+
+}
+
+
+/* CONTENEDOR FOOTER */
+
+.footerContainer{
+
+display:flex;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+
+/* COLUMNAS */
+
+.footerCol{
+
+flex:1;
+min-width:220px;
+text-align:left;
+
+}
+
+.footerCol h3{
+
+margin-bottom:15px;
+color:lightgreen;
+font-family:'Arial Black';
+
+}
+
+.footerCol p{
+
+line-height:1.6;
+font-size:14px;
+
+}
+
+.footerCol a{
+
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:8px;
+transition:0.3s;
+
+}
+
+.footerCol a:hover{
+
+color:lightgreen;
+transform:translateX(5px);
+
+}
+
+
+/* CONTACTO */
+
+.contactoBox{
+
+background:#e8ffe8;
+padding:20px;
+border-radius:8px;
+color:black;
+border-left:4px solid green;
+
+}
+
+.contactoBox h3{
+
+background:green;
+color:white;
+width:100%;
+padding:15px;
+border-radius:6px;
+margin-bottom:15px;
+text-align:center;
+
+}
+
+.contactoBox p{
+
+font-size:16px;
+margin:6px 0;
+font-weight:500;
+
+}
+
+
+/* REDES */
+
+.redes{
+
+margin-top:30px;
+text-align:center;
+
+}
+
+.redes a{
+
+font-size:22px;
+color:white;
+margin:0 12px;
+transition:0.3s;
+
+}
+
+.redes a:hover{
+
+color:lightgreen;
+transform:scale(1.2);
+
+}
+
+
+/* COPYRIGHT */
+
+.copyright{
+
+margin-top:20px;
+text-align:center;
+font-size:14px;
+opacity:0.8;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.serviciosContainer{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.footerContainer{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.footerCol{
+
+text-align:center;
+
+}
+
 }
