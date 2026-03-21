@@ -117,9 +117,15 @@ font-weight:bold;
 transition:0.3s;
 }
 
+.botonContacto:hover{
+background: palegreen;
+}
+
+
 .apuntame:hover {
     background-color: palegreen;
 }
+
 /* ================= FOOTER GENERAL ================= */
 
 footer{
