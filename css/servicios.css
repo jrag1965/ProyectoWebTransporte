@@ -8,6 +8,8 @@ body {
     text-align: center;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     align-items: center;
@@ -17,6 +19,8 @@ header {
 .fotoHeader {
     width: 20%;
 }
+
+/* NAV */
 
 nav {
     border-top: solid black 1px;
@@ -51,7 +55,9 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Estilos para la sección de Servicios */
+
+/* ================= SERVICIOS ================= */
+
 .serviciosSection {
     text-align: center;
     max-width: 1000px;
@@ -72,7 +78,9 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Estilo para el contenedor de los servicios */
+
+/* CONTENEDOR */
+
 .serviciosContainer {
     display: flex;
     justify-content: space-around;
@@ -80,7 +88,9 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-/* Estilo para cada subsección de servicio */
+
+/* TARJETAS */
+
 .servicio {
     width: 30%;
     text-align: center;
@@ -88,43 +98,187 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s;
+    cursor: pointer;
 }
+
+
+/* HOVER TARJETAS */
+
+.servicio:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #e8ffe8;
+}
+
+
+/* IMAGENES */
 
 .servicio img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
+    transition: 0.3s;
 }
+
+.servicio:hover img {
+    transform: scale(1.05);
+}
+
+
+/* TEXTO */
 
 .servicio p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
+    transition: 0.3s;
 }
 
-/* Estilos del footer */
-footer {
-    background-color: black;
-    padding: 10px 0;
+.servicio:hover p {
+    color: green;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+
+/* ================= FOOTER ================= */
+
+footer{
+background:linear-gradient(135deg,#0a0a0a,#1e1e1e);
+color:white;
+padding:40px 20px;
+margin-top:60px;
+position:relative;
 }
 
-footer ul li {
-    padding: 20px;
+footer::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#00ff88,#00cc66,#00ff88);
+box-shadow:0 0 10px #00ff88;
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: white;
+.footerContainer{
+display:flex;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
+gap:40px;
+flex-wrap:wrap;
 }
 
-footer ul li a:hover {
-    color: lightgreen;
+.footerCol{
+flex:1;
+min-width:220px;
+text-align:left;
+}
+
+.footerCol h3{
+margin-bottom:15px;
+color:lightgreen;
+font-family:'Arial Black';
+}
+
+.footerCol p{
+line-height:1.6;
+font-size:14px;
+}
+
+.footerCol a{
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:8px;
+transition:0.3s;
+}
+
+.footerCol a:hover{
+color:lightgreen;
+transform:translateX(5px);
+}
+
+
+/* CONTACTO */
+
+.contactoBox{
+background:#e8ffe8;
+padding:20px;
+border-radius:8px;
+color:black;
+border-left:4px solid green;
+}
+
+.contactoBox h3{
+background:green;
+color:white;
+width:100%;
+padding:20px 0;
+border-radius:6px;
+margin-bottom:15px;
+font-family:'Arial Black';
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.contactoBox p{
+font-size:16px;
+margin:6px 0;
+font-weight:500;
+}
+
+
+/* REDES */
+
+.redes{
+margin-top:30px;
+text-align:center;
+}
+
+.redes a{
+font-size:22px;
+color:white;
+margin:0 12px;
+transition:0.3s;
+}
+
+.redes a:hover{
+color:lightgreen;
+transform:scale(1.2);
+}
+
+
+/* COPYRIGHT */
+
+.copyright{
+margin-top:20px;
+text-align:center;
+font-size:14px;
+opacity:0.8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.servicio{
+width:90%;
+}
+
+.footerContainer{
+flex-direction:column;
+text-align:center;
+}
+
+.footerCol{
+text-align:center;
+}
+
 }
